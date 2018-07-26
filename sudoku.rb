@@ -46,6 +46,8 @@ class SudokuGame
     val
   end
 
+        # above here is fine
+
   def parse_pos(string)
     string.split(",").map { |char| Integer(char) }
   end
@@ -70,7 +72,7 @@ class SudokuGame
   def solved?
     board.solved?
   end
-
+ #
   def valid_pos?(pos)
     pos.is_a?(Array) &&
       pos.length == 2 &&
